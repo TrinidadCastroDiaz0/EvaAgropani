@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mainRegistar"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar Cosecha"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Campo para el tipo de cosecha -->
+    <EditText
+        android:id="@+id/etTipoCosecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tipo de Cosecha"
+        android:inputType="text"
+        android:textSize="20sp"/>
+
+    <!-- Campo para la cantidad cosechada -->
+    <EditText
+        android:id="@+id/etCantidadCosechada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad Cosechada (kg)"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"/>
+
+    <!-- Botón para guardar la cosecha -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGuardarCosecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="Guardar Cosecha"/>
+</LinearLayout>

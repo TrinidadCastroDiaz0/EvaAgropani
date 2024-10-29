@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroEmpleados">
+
+    <!-- Contenedor principal vertical -->
+    <LinearLayout
+        android:id="@+id/linearLayoutMain"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrar Empleado"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingrese los datos del empleado:"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/nombreempleado"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Nombres y Apellidos"
+            android:layout_marginTop="20dp"
+            android:inputType="textPersonName"
+            android:textSize="15sp"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/correoempleado"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Correo Electronico"
+            android:layout_marginTop="20dp"
+            android:inputType="textEmailAddress"
+            android:textSize="15sp"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/direccionempleado"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Direccion"
+            android:layout_marginTop="20dp"
+            android:inputType="textPostalAddress"
+            android:textSize="15sp"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/rutempleado"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Rut"
+            android:layout_marginTop="20dp"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/numempleado"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Numero de Telefono"
+            android:layout_marginTop="20dp"
+            android:inputType="phone"
+            android:textSize="15sp"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/numempleadoemergencia"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Numero de Emergencia"
+            android:layout_marginTop="20dp"
+            android:inputType="phone"
+            android:textSize="15sp"
+            android:padding="15dp" />
+    </LinearLayout>
+
+    <!-- Contenedor del botón al final de la pantalla -->
+    <LinearLayout
+        android:id="@+id/linearLayoutButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+
+        <Button
+            android:id="@+id/btnregistrarempleado2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar Empleado"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Botón para ver empleados registrados -->
+        <Button
+            android:id="@+id/btnVerEmpleados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver Empleados"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
